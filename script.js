@@ -35,11 +35,12 @@ menuBurger();
 
 function redText(){
   let btnEdit  = document.querySelector(".btn-outline-secondary")
+  let cardText = document.querySelector(".card-text")
   btnEdit.addEventListener("click", function(){
-    document.querySelector(".card-text").style.color = "red"
+    cardText.style.color = "red"
   })};
- redText();
-
+ 
+redText();
 
 //  Fonctionnalité 4 :
 // On va faire quelque chose de similaire à la fonctionnalité 3 mais un peu plus complexe : si on clique sur le bouton "Edit" de la deuxième card, le texte de la card va se mettre en vert. Si on re-clique dessus, il redevient comme avant ! Tu l'as compris, il va falloir que tu cherches comment faire un "toggle" sur le style du texte. C'est plus compliqué que sur une classe.
@@ -165,3 +166,4 @@ function movePage() {
 };
 
 movePage()
+
